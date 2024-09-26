@@ -111,25 +111,16 @@ header__movie-img {
   width: 75%;
   margin: 0 auto;
 }
-.latest-news-container img {
-  width: 50%;
+
+.latest-news__cards {
+  display: flex;
+  gap: 20px;
 }
-.latest-news__card {
+.latest-news-card1 {
   position: relative;
 }
-.ln-card-details {
-  position: absolute;
-  bottom: 10%;
-  left: 3%;
-}
-.latest-news__card h2 {
-  padding-bottom: 10px;
-  width: 40%;
-  font-size: 1rem;
-}
-.latest-news__card p {
-  width: 40%;
-  font-size: 0.8rem;
+.latest-news-card2 {
+  display: flex;
 }
 
 /*footer
