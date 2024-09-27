@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Movie Website</title>
   </head>
 
@@ -19,10 +23,13 @@
         />
         <nav class="navbar">
           <img src="./images/logo.png" alt="website logo image" />
-          <span>
-            <input type="radio" />
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <label for="login-btn" class="login-btn" id="login-btn">
             <img src="./images/login.png" alt="" />
-          </span>
+          </label>
         </nav>
         <div class="header__movie-img">
           <img src="./images/card1.png" alt="movies-thumbnail" />
@@ -168,7 +175,20 @@
 
       <!--Pearls 
 --------------------------------->
-      <section class="pearls"></section>
+      <section class="pearls">
+        <div class="pearls-container">
+          <div class="circle-container">
+            <div class="line"></div>
+            <div class="circle"><p>1980</p></div>
+            <div class="circle"><p>1980</p></div>
+            <div class="circle"><p>1980</p></div>
+            <div class="circle"><p>1980</p></div>
+            <div class="circle"><p>1980</p></div>
+            <div class="circle"><p>1980</p></div>
+            <div class="circle"><p>1980</p></div>
+          </div>
+        </div>
+      </section>
       <!--Latest News
 --------------------------------->
       <section class="latest-news">
@@ -176,20 +196,26 @@
           <h3>Latest News</h3>
           <div class="latest-news__cards">
             <div class="latest-news-card1">
-              <div class="card1">
-                <img src="./images/latest-news.png" alt="movies banner" />
-                <div class="ln-card-details">
-                  <h2 class="headline">
-                    New American films on the screen of Nizami Cinema Center
-                  </h2>
-                  <p class="movie-details">
-                    US-produced "Independence Day: Revival" at Nizami Cinema
-                    Center. "Neighbours. 2 in wartime ”films have been shown.
-                    "Independence Day: Revival" is based on a screenplay by
-                    Nicholas Wright and directed by Roland Emmerich in the
-                    genres of science fiction, adventure and war. Slogan: “We
-                    had 20 years to prepare.
-                  </p>
+              <div class="movie-card latest-news-card1">
+                <div>
+                  <img
+                    src="./images/latest-news.png"
+                    alt=""
+                    class="news-card1"
+                  />
+                  <div class="card-details">
+                    <h2 class="headline">
+                      New American films on the screen of Nizami Cinema Center
+                    </h2>
+                    <p class="movie-details">
+                      US-produced "Independence Day: Revival" at Nizami Cinema
+                      Center. "Neighbours. 2 in wartime ”films have been shown.
+                      "Independence Day: Revival" is based on a screenplay by
+                      Nicholas Wright and directed by Roland Emmerich in the
+                      genres of science fiction, adventure and war. Slogan: “We
+                      had 20 years to prepare.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,30 +275,32 @@
         <div class="footer-size">
           <div class="footer-url-collections">
             <div class="footer-url">
-              <a href="#"><h3>PROFILE</h3></a>
+              <h3>PROFILE</h3>
               <a href="#">FAQ's</a>
               <a href="#">Pricing plans</a>
               <a href="#">Order tracking</a>
               <a href="#">Returns</a>
             </div>
             <div class="footer-url">
-              <a href="#"><h3>RECENT POSTS</h3></a>
+              <h3>RECENT POSTS</h3>
               <a href="#">Touch of uniqueness</a>
               <a href="#">Offices you won’t forget</a>
               <a href="#">Cicilan</a>
             </div>
             <div class="footer-url">
-              <a href="#"><h3>CUSTOMER</h3></a>
+              <h3>CUSTOMER</h3>
               <a href="#">Help & contact us</a>
               <a href="#">Return</a>
               <a href="#">Online stores</a>
               <a href="#">Terms & cordition</a>
             </div>
             <div class="footer-url">
-              <a href="#"><h3>CONTACT</h3></a>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
+              <h3>CONTACT</h3>
+              <div class="social-icon">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </div>
             </div>
           </div>
           <div class="copyright-area">
