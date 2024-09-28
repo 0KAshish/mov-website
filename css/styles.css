@@ -13,28 +13,43 @@ body {
 /*header
 ************************************************/
 .header {
-  background-color: lightblue;
+  height: 100vh;
+  background: url("back.png");
   position: relative;
-}
-.header .bgimg {
-  width: 100%;
-}
-.navbar {
-  position: absolute;
-  top: 5%;
-  display: flex;
-  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.header__movie-img {
-  margin: 0 auto;
-  position: absolute;
-  bottom: 83px;
+.navbar {
+  padding: 21px 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.switch-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.header__movie-img-container {
+  height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   flex-flow: row wrap;
   gap: 50px;
 }
+.header__movie-img-container img:hover {
+  cursor: pointer;
+  overflow: hidden;
+  width: 150%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 header__movie-img {
   display: flex;
   justify-content: center;
@@ -107,18 +122,18 @@ input:checked + .slider:before {
   width: 50px;
   height: 50px;
 }
-/*continue-playing
+/*Currently-playing
 ***********************************************/
 .continue-playing,
 .coming-soon {
-  margin: 50px auto;
-  width: 85%;
+  margin: 87px auto 49px;
+  width: 95%;
 }
 .all-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 26px;
 }
 
 .all-cards > div {
@@ -169,7 +184,7 @@ input:checked + .slider:before {
 }
 .pearls-container {
   padding: 50px 0;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -193,7 +208,7 @@ input:checked + .slider:before {
 }
 
 .circle:nth-child(1) {
-  left: 18;
+  left: 18%;
 }
 .circle:nth-child(2) {
   left: 28%;
@@ -215,7 +230,7 @@ input:checked + .slider:before {
 }
 
 .circle p {
-  margin: -22px;
+  margin: -30px 0 0 -20px;
 }
 
 .circle:hover {
@@ -250,6 +265,8 @@ input:checked + .slider:before {
 .about-us-text {
   padding-right: 50px;
 }
+/*About-Us
+****************/
 
 /*latest-news
 ****************/
@@ -271,7 +288,6 @@ input:checked + .slider:before {
 .news-card1 {
   min-width: 558px;
   min-width: 250px;
-  max-height: auto;
   min-height: auto;
 }
 .latest-news-card2 {

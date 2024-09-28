@@ -16,28 +16,33 @@
       <!--Header
 --------------------------------->
       <header class="header">
-        <img
+        <!-- <img
           src="./images/back.png"
           class="bgimg"
           alt="wonder women movie thumbnail image"
-        />
-        <nav class="navbar">
+        /> -->
+        <div class="navbar">
           <img src="./images/logo.png" alt="website logo image" />
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-          <label for="login-btn" class="login-btn" id="login-btn">
-            <img src="./images/login.png" alt="" />
-          </label>
-        </nav>
-        <div class="header__movie-img">
-          <img src="./images/card1.png" alt="movies-thumbnail" />
-          <img src="./images/card2.png" alt="movies-thumbnail" />
-          <img src="./images/card3.png" alt="movies-thumbnail" />
-          <img src="./images/card4.png" alt="movies-thumbnail" />
-          <img src="./images/card5.png" alt="movies-thumbnail" />
-          <img src="./images/card6.png" alt="movies-thumbnail" />
+          <div class="switch-login">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <label for="login-btn" class="login-btn" id="login-btn">
+              <a href="#"><i class="fa fa-user" style="font-size:35px ;color:white"></i></a>
+            </label>
+          </div>
+        </div>
+
+        <div class="header__movie-img-container">
+          <div>
+            <img src="./images/card1.png" alt="movies-thumbnail" />
+          </div>
+          <div><img src="./images/card2.png" alt="movies-thumbnail" /></div>
+          <div><img src="./images/card3.png" alt="movies-thumbnail" /></div>
+          <div><img src="./images/card4.png" alt="movies-thumbnail" /></div>
+          <div><img src="./images/card5.png" alt="movies-thumbnail" /></div>
+          <div><img src="./images/card6.png" alt="movies-thumbnail" /></div>
         </div>
       </header>
       <!--Continue playing
@@ -45,7 +50,7 @@
       <section class="continue-playing">
         <div class="curr-link">
           <h2>Currently playing</h2>
-          <a href="#">See more ➡</a>
+          <a href="#">See more ➡ </a>
         </div>
         <div class="all-cards">
           <div class="movie-card">
@@ -78,7 +83,7 @@
           </div>
           <div class="movie-card">
             <div>
-              <img src="./images/card.png" alt="">
+              <img src="./images/card.png" alt="" />
               <div class="card-details">
                 <h2 class="movie-name">The Lion King</h2>
                 <p class="release date">20 April</p>
@@ -177,6 +182,7 @@
 --------------------------------->
       <section class="pearls">
         <div class="pearls-container">
+          <div><h3>Pearls of Azerbaijani cinema</h3></div>
           <div class="circle-container">
             <div class="line"></div>
             <div class="circle"><p>1980</p></div>
@@ -196,25 +202,30 @@
                 <h4>OPERETTA</h4>
                 <h3>Arshin Mal Alan</h3>
                 <p class="pearls-deatals">
-                  Arshin Mal Alan is a 4-act operetta composed by Azerbaijani composer Uzeyir Hajibeyov. The libretto of the work was also written by Uzeyir Hajibeyov in 1913 in St. Petersburg. The premiere of the opera was held on October 25, 1913 at the Haji Zeynelabidin Tagiyev Theater in Baku.
+                  Arshin Mal Alan is a 4-act operetta composed by Azerbaijani
+                  composer Uzeyir Hajibeyov. The libretto of the work was also
+                  written by Uzeyir Hajibeyov in 1913 in St. Petersburg. The
+                  premiere of the opera was held on October 25, 1913 at the Haji
+                  Zeynelabidin Tagiyev Theater in Baku.
                 </p>
               </div>
             </div>
             <div class="about-us">
-            <div class="about-us-text">
-              <h3>About Us</h3>
-              <p class="date">2006-2018</p>
-              <p class="pearls-deatals">
-                According to the State Program for the Development of
-                Azerbaijani Cinema for 2008-2018, Nizami, one of the oldest
-                cinemas in the country, was inaugurated on December 27, 2011
-                after major reconstruction. In addition to the current
-                repertoire of films, which includes the most interesting new
-                films, presentations of national films...
-              </p>
-            </div>
-            <div>
-              <img src="./images/chair.png" alt="" />
+              <div class="about-us-text">
+                <h3>About Us</h3>
+                <p class="date">2006-2018</p>
+                <p class="pearls-deatals">
+                  According to the State Program for the Development of
+                  Azerbaijani Cinema for 2008-2018, Nizami, one of the oldest
+                  cinemas in the country, was inaugurated on December 27, 2011
+                  after major reconstruction. In addition to the current
+                  repertoire of films, which includes the most interesting new
+                  films, presentations of national films...
+                </p>
+              </div>
+              <div>
+                <img src="./images/chair.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
