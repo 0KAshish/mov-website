@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --para-font-size: 1rem;
+}
+
 body {
   font-family: Roboto, sans-serif;
   width: 100%;
@@ -124,10 +128,10 @@ input:checked + .slider:before {
 }
 /*Currently-playing
 ***********************************************/
-.continue-playing,
+.continue-playing__container,
 .coming-soon {
   margin: 87px auto 49px;
-  width: 95%;
+  width: 92%;
 }
 .all-cards {
   display: flex;
@@ -176,16 +180,20 @@ input:checked + .slider:before {
 }
 /*coming-now
 ****************/
-.coming-soon {
-}
+
+/* all css used by currently palying section*/
+
 /*pearls
 ****************/
 .pearls {
 }
 .pearls-container {
   padding: 50px 0;
-  width: 95%;
+  width: 82%;
   margin: 0 auto;
+}
+.pearls-containe__heading {
+  margin-bottom: 80px;
 }
 
 .circle-container {
@@ -205,11 +213,9 @@ input:checked + .slider:before {
   width: 5px;
   height: 5px;
   border-radius: 50%;
+  left: 15%;
 }
 
-.circle:nth-child(1) {
-  left: 18%;
-}
 .circle:nth-child(2) {
   left: 28%;
 }
@@ -246,12 +252,20 @@ input:checked + .slider:before {
   gap: 50px;
 }
 
-.pearls-cards img {
+.about-us img {
   width: 100%;
 }
 
-.about-us,
-.operetta {
+/*About-Us
+****************/
+.about-us-section {
+  box-shadow: 5px 5px 20px 0 #0000004d;
+}
+.about-us-section__container {
+  width: 82%;
+  margin: 0 auto;
+}
+.about-us {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -265,15 +279,14 @@ input:checked + .slider:before {
 .about-us-text {
   padding-right: 50px;
 }
-/*About-Us
-****************/
 
 /*latest-news
 ****************/
 .latest-news {
+  padding-top: 70px;
 }
 .latest-news-container {
-  width: 80%;
+  width: 82%;
   margin: 0 auto;
 }
 
@@ -314,9 +327,8 @@ input:checked + .slider:before {
   padding: 50px;
   background-color: rgb(223, 216, 216);
 }
-.footer-size {
-  padding: 10px;
-  width: 75%;
+.footer-container{
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -326,9 +338,14 @@ input:checked + .slider:before {
 }
 
 .footer-url a {
+  font-weight: light;
+  font-size: 15px;
   text-decoration: none;
-  line-height: 2.8;
+  line-height: 3;
   display: block;
+}
+.footer-url-heading {
+  margin-bottom: 50px;
 }
 
 .social-icon {
@@ -339,6 +356,10 @@ input:checked + .slider:before {
 .copyright-area {
   padding-top: 30px;
 }
+hr {
+  height: px;
+}
 .copyright {
+  font-size: 14px;
   padding-top: 20px;
 }
