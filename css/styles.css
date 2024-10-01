@@ -9,19 +9,25 @@
 }
 
 body {
+  margin: 0 auto;
   font-family: Roboto, sans-serif;
-  width: 100%;
+  max-width: 1512px;
+  max-height: auto;
+  width: 100vw;
   height: 100vh;
 }
 
 /*header
 ************************************************/
 .header {
-  height: 100vh;
+  min-height: 80vh;
+  width: 1512px;
+  height: 982px;
   background: url("back.png");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .navbar {
@@ -38,7 +44,7 @@ body {
 }
 
 .header__movie-img-container {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;

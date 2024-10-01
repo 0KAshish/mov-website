@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/formstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -236,7 +237,7 @@
             </div>
           </div>
           <div class="pearls-cards hidden">
-            <div class="operetta about-us ">
+            <div class="operetta about-us">
               <div>
                 <img src="./images/operetta.png" alt="" />
               </div>
@@ -401,6 +402,84 @@
           </div>
         </div>
       </footer>
+
+      <!--Form
+--------------------------------->
+      <section class="form-area">
+        <div class="form-container">
+          <h2>ORDER</h2>
+          <form action="" method="get">
+            <label for="name"
+              >Name and surname
+              <input
+                class="full-width"
+                type="text"
+                name="name"
+                value="name"
+                required
+              />
+            </label>
+            <label for="name"
+              >Email
+              <input
+                class="full-width"
+                type="email"
+                name="email"
+                value="email"
+                required
+              />
+            </label>
+            <label for="name"
+              >Promo<br />
+              <input
+                class="inline-block text"
+                type="text"
+                name="promo"
+                value="promo"
+                required
+              />
+              <input class="inline-block btn" type="button" value="Apply" />
+            </label>
+            <label for="phone"
+              >Cell.Phone<br />
+              <select class="c-code" name="countrycode" id="country-code">
+                <option value="">--Country Code--</option>
+                <option value="1">+91</option>
+                <option value="2">+91</option>
+                <option value="3">+91</option>
+                <option value="4">+91</option>
+                <option value="5">+91</option>
+                <input
+                  class="inline-block text2"
+                  type="text"
+                  name="phoneno"
+                  id="phone-no"
+                /></select
+            ></label>
+            <label for="payment"
+              >Payment
+              <select name="card name " id="card name">
+                <option value="">--Select card--</option>
+                <option value="1">Rupay</option>
+                <option value="2">Mastercard</option>
+                <option value="3">Credit card</option>
+                <option value="4">Debit card</option>
+              </select>
+              <input type="text" name="card no" id="card" />
+            </label>
+            <label class="inline" for="checkbox"></label>
+              <input
+                type="checkbox"
+                name="remember me"
+                id=" remember-me"
+              />Remember card information
+            </label>
+            <label for="purchase button">
+              <button>Purchase</button>
+            </label>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
