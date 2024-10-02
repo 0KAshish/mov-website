@@ -182,38 +182,87 @@
 
       <!--Pearls 
 --------------------------------->
-      <section class="pearls">
+      <section class="pearls-containe">
+        <div class="pearls-containe__heading">
+          <h3>Pearls of Azerbaijani cinema</h3>
+        </div>
+      </section>
+      <section class="pearls" id="card">
         <div class="pearls-container">
-          <div class="pearls-containe__heading">
-            <h3>Pearls of Azerbaijani cinema</h3>
-          </div>
           <div>
             <div class="circle-container">
               <div>
-                <div class="line"></div>
+                <div class="line">
                 <div class="circle">
-                  <p>1980</p>
+                  <p id="yr1940" onclick="nextCard">1940</p>
+                </div>
+                <div class="circle">
+                  <p>1950</p>
+                </div>
+                <div class="circle">
+                  <p>1970</p>
                 </div>
                 <div class="circle">
                   <p>1980</p>
                 </div>
                 <div class="circle">
-                  <p>1980</p>
+                  <p>1990</p>
+                </div>
+                <div class="circle">
+                  <p>2000</p>
+                </div>
+                <div class="circle">
+                  <p>2010</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pearls-cards">
+            <div class="operetta about-us">
+              <div>
+                <img src="./images/operetta.png" alt="" />
+              </div>
+              <div class="operetta-text">
+                <h4>OPERETTA</h4>
+                <h3>Arshin Mal Alan</h3>
+                <p class="pearls-deatals">
+                  Arshin Mal Alan is a 4-act operetta composed by Azerbaijani
+                  composer Uzeyir Hajibeyov. The libretto of the work was also
+                  written by Uzeyir Hajibeyov in 1913 in St. Petersburg. The
+                  premiere of the opera was held on October 25, 1913 at the Haji
+                  Zeynelabidin Tagiyev Theater in Baku.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pearls" id="card1980">
+        <div class="pearls-container">
+          <div>
+            <div class="circle-container">
+              <div>
+                <div class="line">
+                <div class="circle">
+                  <p>1940</p>
+                </div>
+                <div class="circle" id="age-1980">
+                  <p>1950</p>
+                </div>
+                <div class="circle">
+                  <p>1970</p>
                 </div>
                 <div class="circle">
                   <p>1980</p>
                 </div>
                 <div class="circle">
-                  <p>1980</p>
+                  <p>1990</p>
                 </div>
                 <div class="circle">
-                  <p>1980</p>
+                  <p>2000</p>
                 </div>
                 <div class="circle">
-                  <p>1980</p>
-                </div>
-                <div class="circle">
-                  <p>1980</p>
+                  <p>2010</p>
                 </div>
               </div>
             </div>
@@ -467,7 +516,7 @@
               </select>
               <input type="text" name="card no" id="card" />
             </label>
-            <label class="inline" for="checkbox"></label>
+            <label class="inline" for="checkbox">
               <input
                 type="checkbox"
                 name="remember me"
@@ -481,5 +530,6 @@
         </div>
       </section>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -21,8 +21,8 @@ body {
 ************************************************/
 .header {
   min-height: 80vh;
-  width: 1512px;
-  height: 982px;
+  max-width: 1512px;
+  max-height: 982px;
   background: url("back.png");
   position: relative;
   background-repeat: no-repeat;
@@ -191,15 +191,24 @@ input:checked + .slider:before {
 
 /*pearls
 ****************/
-.pearls {
+.pearls-containe {
+  margin: 0 auto;
+  width: 82%;
+}
+
+.pearls-containe__heading {
+  margin: 100px 0 16px;
+}
+
+#card1980 {
+  display: none;
+  background-color: black;
+  color: white;
 }
 .pearls-container {
-  padding: 50px 0;
+  padding-top: 60px;
   width: 82%;
-  margin: 0 auto;
-}
-.pearls-containe__heading {
-  margin-bottom: 80px;
+  margin: 0 auto 50px;
 }
 
 .circle-container {
@@ -221,7 +230,9 @@ input:checked + .slider:before {
   border-radius: 50%;
   left: 15%;
 }
-
+.circle:nth-child(1) {
+  left: 10%;
+}
 .circle:nth-child(2) {
   left: 28%;
 }
@@ -250,7 +261,7 @@ input:checked + .slider:before {
 }
 
 .pearls-cards {
-  padding: 80px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,10 +271,6 @@ input:checked + .slider:before {
 
 .circle:nth-child(2):hover + .hidden {
   display: block;
-}
-
-.hidden {
-  display: none;
 }
 
 .about-us img {
