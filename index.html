@@ -33,15 +33,38 @@
         </div>
 
         <div class="header__movie-img-container">
-          <div>
+          <div class="movie-img">
             <img src="./images/card1.png" alt="movies-thumbnail" />
+            <div class="movie-details">
+              <h2>Movie Name</h2>
+              <button class="book-now-btn" id="book-now" onclick="bookNow()">Book Now</button>
+            </div>
           </div>
-          <div><img src="./images/card2.png" alt="movies-thumbnail" /></div>
-          <div><img src="./images/card3.png" alt="movies-thumbnail" /></div>
-          <div><img src="./images/card4.png" alt="movies-thumbnail" /></div>
-          <div><img src="./images/card5.png" alt="movies-thumbnail" /></div>
-          <div><img src="./images/card6.png" alt="movies-thumbnail" /></div>
+          <div class="movie-img">
+            <img src="./images/card2.png" alt="movies-thumbnail" />
+            <div class="movie-details">
+              <h2>Movie Name</h2>
+              <button class="book-now-btn" id="book-now" onclick="bookNow()">Book Now</button>
+            </div>
+          </div>
+          <div class="movie-img"><img src="./images/card3.png" alt="movies-thumbnail" /><div class="movie-details">
+            <h2>Movie Name</h2>
+            <button class="book-now-btn" id="book-now" onclick="bookNow()">Book Now</button>
+          </div></div>
+          <div class="movie-img"><img src="./images/card4.png" alt="movies-thumbnail" /><div class="movie-details">
+            <h2>Movie Name</h2>
+            <button class="book-now-btn" id="book-now" onclick="bookNow()">Book Now</button>
+          </div></div>
+          <div class="movie-img"><img src="./images/card5.png" alt="movies-thumbnail" /><div class="movie-details">
+            <h2>Movie Name</h2>
+            <button class="book-now-btn" id="book-now" onclick="bookNow()">Book Now</button>
+          </div></div>
+          <div class="movie-img"><img src="./images/card6.png" alt="movies-thumbnail" /><div class="movie-details">
+            <h2>Movie Name</h2>
+            <button class="book-now-btn" id="book-now" onclick="bookNow()">Book Now</button>
+          </div></div>
         </div>
+        
       </header>
       <!--Continue playing
 --------------------------------->
@@ -193,8 +216,8 @@
             <div class="circle-container">
               <div>
                 <div class="line">
-                <div class="circle">
-                  <p id="yr1940" onclick="nextCard">1940</p>
+                <div class="circle" onclick="nextCard()">
+                  <p >1940</p>
                 </div>
                 <div class="circle">
                   <p>1950</p>
@@ -285,24 +308,7 @@
               </div>
             </div>
           </div>
-          <div class="pearls-cards hidden">
-            <div class="operetta about-us">
-              <div>
-                <img src="./images/operetta.png" alt="" />
-              </div>
-              <div class="operetta-text">
-                <h4>OPERETTA</h4>
-                <h3>Arshin Mal Alan</h3>
-                <p class="pearls-deatals">
-                  Arshin Mal Alan is a 4-act operetta composed by Azerbaijani
-                  composer Uzeyir Hajibeyov. The libretto of the work was also
-                  written by Uzeyir Hajibeyov in 1913 in St. Petersburg. The
-                  premiere of the opera was held on October 25, 1913 at the Haji
-                  Zeynelabidin Tagiyev Theater in Baku.
-                </p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -454,7 +460,7 @@
 
       <!--Form
 --------------------------------->
-      <section class="form-area">
+      <section class="form-area" id="orderform">
         <div class="form-container">
           <h2>ORDER</h2>
           <form action="" method="get">

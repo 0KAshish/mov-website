@@ -51,13 +51,44 @@ body {
   flex-flow: row wrap;
   gap: 50px;
 }
-.header__movie-img-container img:hover {
+.movie-img:hover {
   cursor: pointer;
   overflow: hidden;
-  width: 150%;
+  transform: scale(1.5) translateY(-20%);
+  transition: all 0.3s ease;
   height: auto;
   display: flex;
   flex-flow: row wrap;
+}
+.movie-img:hover .movie-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.movie-img {
+  position: relative;
+}
+
+.movie-details {
+  top: 60%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+}
+
+.movie-details h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+.book-now-btn {
+  width: fit-content;
+  font-size: 13px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 header__movie-img {
@@ -204,6 +235,9 @@ input:checked + .slider:before {
   display: none;
   background-color: black;
   color: white;
+}
+#card1980 .circle {
+  background-color: white;
 }
 .pearls-container {
   padding-top: 60px;
