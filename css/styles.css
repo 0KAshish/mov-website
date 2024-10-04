@@ -20,9 +20,9 @@ body {
 /*header
 ************************************************/
 .header {
-  min-height: 80vh;
+  max-height: 100vh;
   max-width: 1512px;
-  max-height: 982px;
+  /* max-height: 982px; */
   background: url("back.png");
   position: relative;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ body {
 }
 
 .header__movie-img-container {
-  height: 85vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -172,14 +172,14 @@ input:checked + .slider:before {
 }
 .all-cards {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   gap: 26px;
 }
 
-.all-cards > div {
+/* .all-cards > div {
   width: calc(25% - 20px);
-}
+} */
 
 .curr-link {
   margin-bottom: 50px;
@@ -419,4 +419,32 @@ hr {
 .copyright {
   font-size: 14px;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-url-collections {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .latest-news__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .latest-news-card1 img {
+    width: 3p0px;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .all-cards {
+    flex-flow: row wrap;
+  }
+  .all-cards > .movie-card {
+    width: 50%;
+    flex: 1 1 50%;
+  }
 }
