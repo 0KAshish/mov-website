@@ -5,7 +5,13 @@
 }
 
 :root {
-  --para-font-size: 1rem;
+  --fss: 0.6875rem;
+  --fs: 0.975rem;
+  --fn: 1rem;
+  --fnm: 1.25rem;
+  --fm: 1.5625rem;
+
+  --li-col: #000;
 }
 
 body {
@@ -54,7 +60,7 @@ body {
 .movie-img:hover {
   cursor: pointer;
   overflow: hidden;
-  transform: scale(1.5) translateY(-20%);
+  transform: scale(1.8) translateY(-25%);
   transition: all 0.3s ease;
   height: auto;
   display: flex;
@@ -137,7 +143,7 @@ header__movie-img {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #e5e5e5;
 }
 
 input:focus + .slider {
@@ -157,6 +163,7 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+  background-color: black;
 }
 
 .login-btn img {
@@ -176,7 +183,13 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
 }
+.curr-link h2 {
+  font-size: var(--fm);
+  vertical-align: center;
+  font-weight: 600;
+}
 .curr-link a {
+  font-size: var(--fn);
   text-decoration: none;
   color: black;
 }
@@ -193,7 +206,9 @@ input:checked + .slider:before {
   position: relative;
   margin-bottom: 20px;
 }
-
+.movie-card h2 {
+  margin: 0;
+}
 .card-details {
   line-height: 1.4;
   font-size: 0.8rem;
@@ -345,9 +360,9 @@ input:checked + .slider:before {
 }
 
 .latest-news__cards {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
 }
 
 .latest-news-card1 {
@@ -357,6 +372,7 @@ grid-gap: 50px;
   width: 100%;
 }
 .headline {
+  text-align: left;
   width: 50%;
 }
 .latest-news-card1 p {
@@ -377,9 +393,8 @@ grid-gap: 50px;
 /*footer
 ****************/
 .footer {
-  background-color: #fafafa;
+  background-color: rgba(250, 250, 250, 1);
   padding: 50px;
-  background-color: rgb(223, 216, 216);
 }
 .footer-container {
   width: 85%;
@@ -397,7 +412,8 @@ grid-gap: 50px;
 
 .footer-url a {
   font-weight: light;
-  font-size: 15px;
+  font-size: var(--fs);
+  color: var(--li-col);
   text-decoration: none;
   line-height: 3;
   display: block;
@@ -408,7 +424,9 @@ grid-gap: 50px;
 
 .social-icon {
   display: flex;
-  justify-content: space-between;
+}
+.social-icon a {
+  padding-right: 18px;
 }
 
 .copyright-area {
