@@ -21,7 +21,15 @@ A modern, responsive movie website showcasing currently playing films, upcoming 
 ---
 
 ## 📁 Project Structure
-
+├── index.html\
+├── css/\
+│ ├── styles.css\
+│ └── formstyle.css\
+├── images/\
+│ ├── logo.png\
+│ ├── card1.png\
+│ └── ...\
+└── README.md\
 
 ---
 
